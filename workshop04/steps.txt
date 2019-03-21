@@ -1,0 +1,13 @@
+1. docker build -t taitai22/weatherapp . 
+2. docker push taitai22/weatherapp
+3. helm create weather
+
+4. create deployment.yaml
+5. create service.yaml
+6. add weather.replicaCount to deployment.yaml
+7. include ProductionEnv in Value
+8. update helpers.tpl on the if and else statement which acts on productionEnv to update weather.replicaCount
+9. update deployment.yaml to add env variable APP_ID and APP_DEFAULT_CITY
+10. add value in values.yaml
+
+helm install weather --name v3

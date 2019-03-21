@@ -1,0 +1,29 @@
+replicaCount: 1
+
+image:
+  repository:  balanus/weatherapp
+  tag: fixedv1
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 3000
+
+version: v1
+
+deployment:
+  containerPort: 3000
+  production: ""
+
+
+APP_ID: 3af4185f06b6f8d839b72273c3d006f4
+
+productionEnv: true
+productionReplicacount: 2
+
+APP_DEFAULT_CITY: ""
+  

@@ -1,0 +1,10 @@
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl desc svc
+* Get the IP address of the loadbalancer
+kubectl apply -f gateway.yaml
+kubectl apply -f virtual-service.yaml
+kubectl apply -f service-entry.yaml
+
+
+
